@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Malicious Content Detection",
+  "description": "This extension takes a URL and uses machine learning to detect whether it leads to a malicious website or not",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "tabs",
+    "<all_urls>"
+  ]
+}
